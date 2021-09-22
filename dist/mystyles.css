@@ -1,0 +1,29 @@
+
+/* Leaflet map styles */
+#map { 
+    height: 600px;
+    width: 80%;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.cityPopup {
+     font-size: 25px;
+}
+
+/***** Individual slide styles *****/
+
+/* About Me page */ 
+#aboutMe {
+    display: flex;
+    flex-direction: row;
+}
+
+#aboutMe ul {
+    font-size: 25px;
+}
+
+/* EcoValuator page */
+#ecoValuator {
+     font-size: 85px;
+}

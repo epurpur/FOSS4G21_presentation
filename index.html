@@ -12,12 +12,62 @@
 
 		<!-- Theme used for syntax highlighted code -->
 		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+
+		<!-- Leaflet CSS -->
+		 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+   		integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+   		crossorigin=""/>
+
+		<!-- Link to custom styles -->
+		<link rel="stylesheet" href="dist/mystyles.css"
+
 	</head>
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
+				<section>
+					<h3>EcoValuator: Basic Ecosystem Service Valuation for Custom Landscapes</h3>
+				</section>
+
+				<section>
+					<h4>A little about me</h4>
+					<div id='aboutMe'>
+						<div id="map" class="map">Map</div>
+						<div>
+							<br>
+							<ul>
+								<li>Charlottesville, Virginia, USA</li>
+								<br>
+								<li>Research Librarian</li>
+								<br>
+								<li>GIS background</li>
+								<br>
+								<li>Programmer/Web Developer</li>
+								<br>
+								<li>Rock climbing + skiing </li>
+							</ul>
+						</div>
+					<div>
+				</section>
+
+				<section>
+					<img class="r-frame" width="600" height="200" data-src="public/images/keyloglogo.png" alt="Key-Log Economics logo">
+					<p>An environmental consulting firm which develops and communicates the critical economic connections between humans and nature</p>
+				</section>
+
+				<section>
+					<p id="ecoValuator">EcoValuator</p>
+					<ul>
+						<li>A python plugin for QGIS</li>
+						<li>Funded by National Fish & Wildlife Foundation</li>
+					</ul>
+					<p>A simple means of estimating the dollar value of ecosystem services in a study area</p>
+				</section>
+
+				<section>
+
+				</section>
+
 			</div>
 		</div>
 
@@ -25,6 +75,8 @@
 		<script src="plugin/notes/notes.js"></script>
 		<script src="plugin/markdown/markdown.js"></script>
 		<script src="plugin/highlight/highlight.js"></script>
+		
+		<!-- Reveal.js -->
 		<script>
 			// More info about initialization & config:
 			// - https://revealjs.com/initialization/
@@ -36,5 +88,14 @@
 				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
 			});
 		</script>
+
+		<!-- Leaflet JS -->
+ 		<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+   		integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+   		crossorigin=""></script>
+
+		<!-- Custom JS -->
+		<script src="script.js"></script>
+
 	</body>
 </html>
