@@ -4,7 +4,7 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>reveal.js</title>
+		<title>FOSS4G '21 PRESENTATION</title>
 
 		<link rel="stylesheet" href="dist/reset.css">
 		<link rel="stylesheet" href="dist/reveal.css">
@@ -18,15 +18,22 @@
    		integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
    		crossorigin=""/>
 
+		<!-- Google Fonts -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@500&display=swap" rel="stylesheet">		
+		
 		<!-- Link to custom styles -->
 		<link rel="stylesheet" href="dist/mystyles.css"
 
 	</head>
+
 	<body>
 		<div class="reveal">
 			<div class="slides">
 				<section>
-					<h3>EcoValuator: Basic Ecosystem Service Valuation for Custom Landscapes</h3>
+					<h3><span>EcoValuator</span></h3>
+					<h3>Basic Ecosystem Service Valuation for Custom Landscapes</h3>
 				</section>
 
 				<section>
@@ -52,7 +59,7 @@
 
 				<section>
 					<img class="r-frame" width="600" height="200" data-src="public/images/keyloglogo.png" alt="Key-Log Economics logo">
-					<p>An environmental consulting firm which develops and communicates the critical economic connections between humans and nature</p>
+					<p>An environmental economics consulting firm which develops and communicates the critical economic connections between humans and nature</p>
 				</section>
 
 				<section>
@@ -61,11 +68,89 @@
 						<li>A python plugin for QGIS</li>
 						<li>Funded by National Fish & Wildlife Foundation</li>
 					</ul>
-					<p>A simple means of estimating the dollar value of ecosystem services in a study area</p>
+					<p><span>A simple means of estimating the dollar value of ecosystem services in a study area</span></p>
 				</section>
 
 				<section>
+					<h3>Ecosystem Serivices</h3>
+					<p><span>The benefits that people obtain from ecosystems</span></p>
+					<ul>
+						<li>Provisioning Services</li>
+						<ul>
+							<li>provides food, fresh water, fuel...</li>
+						</ul>
+						<li>Regulating Services</li>
+						<ul>
+							<li>influences climate, water, pollination</li>
+						</ul>
+						<li>Supporting Services</li>
+						<ul>
+							<li>soil formation, nutrient cycling</li>
+						</ul>
+						<li>Cultural Services</li>
+						<ul>
+							<li>educational, aesthetic, recreation, cultural value</li>
+						</ul>
+					</ul>
+				</section>
 
+				<section id="landcover">
+					<h3>Current Landcover Rasters</h3>
+					<p><span>NLCD</span>: National Land Cover Dataset</p>
+					<p><span>NALCMS</span>: North American Land Change Monitoring System<p>
+				</section>
+
+				<section>
+					<h4>Step 1: <span>Estimate Ecosystem Service Values for Study Region</span></h4>
+					<ul>
+						<li>Clips input land cover raster to the extent of user's study area
+						<li>Calculates how much area each type of land cover is present in study area</li>
+						<li>Multiplies those areas by each of the associated per-hectare ecosystem services values</li>
+					</ul>
+				</section>
+
+				<section>
+					<h4>Result</h4>
+				</section>
+
+				<section>
+					<h4>Step 2: <span>Map the Value of Individual Ecosystem Services</span></h4>
+					<p>Uses step 1 output and creates a new raster for which the value is represented per-pixel for the user-selected ecosystem service</p>
+				</section>
+
+				<section>
+					<h4>Result</h4>
+				</section>
+
+				<section>
+					<h4>Step 3: <span>Create Print Layout and Export as .pdf</span></h4>
+					<p>Make a nice map with just a few clicks</p>
+				</section>
+
+				<section>
+					<h4>Result</h4>
+					<img class="r-frame" width="900" height="575" data-src="public/images/RoanokeRiverPDF.png" alt="Key-Log Economics logo">
+				</section>
+
+				<section id="acknowledgements">
+					<h3>Acknowledgements</h3>
+					<p><span>Key-Log Economics</span></p>
+					<ul>
+						<li>Spencer Phillips</li>
+						<li>Anna Perry</li>
+					</ul>
+					<ul>
+						<li>Phil Ribbens</li>
+						<li>Elliott Kurtz</li>
+					</ul>
+					<p><span>FOSS4G</span></p>
+					<p><span>All of you who attended</span></p>
+				</section>
+
+				<section id="thanks">
+					<h3><span id='thanks'>Thank You!  </span><span>Muchas Gracias!</span></h3>
+					
+					<p>epurpur@gmail.com</p>
 				</section>
 
 			</div>

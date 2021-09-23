@@ -1,4 +1,11 @@
 
+/* Global Element Styles */
+span {
+    color: rgb(52, 197, 255);
+    font-family: 'Libre Franklin', sans-serif;
+}
+
+
 /* Leaflet map styles */
 #map { 
     height: 600px;
@@ -26,4 +33,15 @@
 /* EcoValuator page */
 #ecoValuator {
      font-size: 85px;
+}
+
+/* land cover dataset page */
+#landcover p {
+    font-size: 90%;
+}
+
+
+/* thank you page */
+#thanks {
+    color: white !important;  
 }
