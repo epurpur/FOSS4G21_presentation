@@ -1,4 +1,8 @@
-// Initialize Leaflet Map
+
+
+// LEAFLET MAP 1 - OVERVIEW
+
+// Initialize Leaflet Map 1
 
 const map = L.map('map').setView([37.052887, -81.103989], 4.4);
 L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
@@ -31,3 +35,5 @@ chicago.bindPopup(`<b class='cityPopup'>Chicago</b>`);
 
 const washington = L.marker([38.889248, -77.050636]).addTo(map);
 washington.bindPopup(`<b class='cityPopup'>Washington</b>`);
+
+

@@ -24,7 +24,8 @@
 		<link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@500&display=swap" rel="stylesheet">		
 		
 		<!-- Link to custom styles -->
-		<link rel="stylesheet" href="dist/mystyles.css"
+		<link rel="stylesheet" href="dist/mystyles.css">
+
 
 	</head>
 
@@ -39,7 +40,7 @@
 				<section>
 					<h4>A little about me</h4>
 					<div id='aboutMe'>
-						<div id="map" class="map">Map</div>
+						<div id="map" class="map"></div>
 						<div>
 							<br>
 							<ul>
@@ -95,9 +96,18 @@
 				</section>
 
 				<section id="landcover">
-					<h3>Current Landcover Rasters</h3>
-					<p><span>NLCD</span>: National Land Cover Dataset</p>
-					<p><span>NALCMS</span>: North American Land Change Monitoring System<p>
+					<h4>Current Landcover Rasters</h4>
+					<div id='container'>
+						<div>
+							<p><span>NLCD</span>: National Land Cover Dataset</p>
+							<img class="r-frame" width="400" height="400" data-src="public/images/NLCD.png" alt="NLCD overview map">
+						</div>
+						<div>
+							<p><span>NALCMS</span>: North American Land Change Monitoring System<p>
+							<img class="r-frame" width="400" height="400" data-src="public/images/NALCMS.png" alt="NALCMS overview map">
+
+						</div>
+					</div>
 				</section>
 
 				<section>

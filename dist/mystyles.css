@@ -36,8 +36,17 @@ span {
 }
 
 /* land cover dataset page */
-#landcover p {
-    font-size: 90%;
+#landcover p{
+    font-size: 40%;
+}
+
+#container { 
+    display: flex;
+    flex-direction: row;
+}
+
+#container div {
+    width: 50%;
 }
 
 
