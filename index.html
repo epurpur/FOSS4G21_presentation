@@ -61,6 +61,7 @@
 				<section>
 					<img class="r-frame" width="600" height="200" data-src="public/images/keyloglogo.png" alt="Key-Log Economics logo">
 					<p>An environmental economics consulting firm which develops and communicates the critical economic connections between humans and nature</p>
+					<p><span>They try to prove that saving the environment makes economic sense</span></p>
 				</section>
 
 				<section>
@@ -74,7 +75,7 @@
 
 				<section>
 					<h3>Ecosystem Serivices</h3>
-					<p><span>The benefits that people obtain from ecosystems</span></p>
+					<p><span>The benefits that people obtain from then natural environment</span></p>
 					<ul>
 						<li>Provisioning Services</li>
 						<ul>
@@ -97,7 +98,8 @@
 
 				<section id="landcover">
 					<h4>Current Landcover Rasters</h4>
-					<div id='container'>
+					<div id="subtitle">Each dataset categorizes the earth into about 20 landcover types</div>
+					<div class="container">
 						<div>
 							<p><span>NLCD</span>: National Land Cover Dataset</p>
 							<img class="r-frame" width="400" height="400" data-src="public/images/NLCD.png" alt="NLCD overview map">
@@ -105,7 +107,6 @@
 						<div>
 							<p><span>NALCMS</span>: North American Land Change Monitoring System<p>
 							<img class="r-frame" width="400" height="400" data-src="public/images/NALCMS.png" alt="NALCMS overview map">
-
 						</div>
 					</div>
 				</section>
@@ -120,7 +121,27 @@
 				</section>
 
 				<section>
-					<h4>Result</h4>
+					<h4>Study Area: Albemarle County</h4>
+					<div id="map2" class="map"></div>
+				</section>
+
+				<section>
+					<h4>Results: Step 1</h4>
+					<img class="r-frame resultsImg" width="1100" height="600" data-src="public/images/Step1Result.png" alt="Step1 output screenshot">
+				</section>
+
+				<section>
+					<h4>Results: Step 1</h4>
+					<img class="r-frame resultsImg" width="1100" height="600" data-src="public/images/Step1ResultTable.png" alt="Step1 output table">
+				</section>
+
+				<section>
+					<h4>Benefit Transfer Method</h4>
+					<ul>
+						<li>Provides an accessible way of estimating the value of ecosystem service flows based on the values estimated in another similar setting.</li>
+						<br>
+						<li>Referenced studies performed in other, similar ecosystems to extrapolate the value of each ecosystem service</li>
+					</ul>
 				</section>
 
 				<section>
@@ -129,7 +150,17 @@
 				</section>
 
 				<section>
-					<h4>Result</h4>
+					<h4>Results: Step 2</h4>
+					<div class="container">
+						<div>
+							<p>Air Quality</p>
+							<img class="r-frame resultsImg" width="500" height="400" data-src="public/images/Step2AirQuality.png" alt="Step2 Air Quality value estimation">
+						</div>
+						<div>
+							<p>Biodiversity</p>
+							<img class="r-frame resultsImg" width="500" height="400" data-src="public/images/Step2Biodiversity.png" alt="Step2 Biodiversity value estimation">
+						</div>
+					</div>
 				</section>
 
 				<section>
@@ -138,8 +169,23 @@
 				</section>
 
 				<section>
-					<h4>Result</h4>
-					<img class="r-frame" width="900" height="575" data-src="public/images/RoanokeRiverPDF.png" alt="Key-Log Economics logo">
+					<h4>Step 3: Results</h4>
+					<img class="r-frame resultsImg" width="900" height="575" data-src="public/images/Step3AlbemarleAirQuality2.png" alt="Albemarle County average air quality estimated value per pixel">
+				</section>
+
+				<section>
+					<h4>Future Development</h4>
+					<ul>
+						<li>Include other Land Use/Land Cover datasets</li>
+						<ul>
+							<li>Vietnam in particular</li>
+							<li>Southeast Asia in general</li>
+						</ul>
+						<li>Make robust for future versions of QGIS</li>
+						<ul>
+							<li>Currently developed for v3.10</li>
+						</ul>
+					</ul>
 				</section>
 
 				<section id="acknowledgements">
@@ -153,8 +199,7 @@
 						<li>Phil Ribbens</li>
 						<li>Elliott Kurtz</li>
 					</ul>
-					<p><span>FOSS4G</span></p>
-					<p><span>All of you who attended</span></p>
+					<p><span>FOSS4G Community</span></p>
 				</section>
 
 				<section id="thanks">

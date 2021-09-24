@@ -40,13 +40,29 @@ span {
     font-size: 40%;
 }
 
-#container { 
+#landcover #subtitle{
+    font-size: 70%;
+}
+
+.container { 
     display: flex;
     flex-direction: row;
 }
 
-#container div {
+.container div {
     width: 50%;
+}
+
+/* Study area page */
+#map2 { 
+    height: 600px;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+/* Step 1 results */
+.resultsImg {
+    border-radius: 10px;
 }
 
 
